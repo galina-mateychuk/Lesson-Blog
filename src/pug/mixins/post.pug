@@ -1,0 +1,22 @@
+mixin post(title ,info, img, link)
+    article.post
+        
+        h2.post__title #{title}
+        
+        .post__info #{info}
+        
+        .post__img
+            img(src="img/posts-preview/" + img, alt="Austin DIY lorem ipsum dolor sit amet consectetur.")
+        
+        .post__content
+            block
+
+        .post__footer
+            .post__read-more
+
+                +button-read-more("read next", link)
+
+            //- a(href="http://google.com").button-read-more read more
+
+            .post__share-icons
+                include ./../sections/share-icons.pug
