@@ -2,8 +2,10 @@
 @import "./libs/bootstrap-reboot";
 @import "./libs/bootstrap-grid";
 
+// Base styles
+@import "./base/base";
+
 // Blocks
-@import "./blocks/base/base";
 @import "./blocks/header";
 @import "./blocks/social-icons";
 @import "./blocks/logo";
